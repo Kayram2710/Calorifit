@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "440573315864",
+    "project_id": "calorifit-8f6fc",
+    "storage_bucket": "calorifit-8f6fc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440573315864:android:96edbf9cfacfb26814ec6d",
+        "android_client_info": {
+          "package_name": "com.example.calorifit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkeVQUOB5FUX3-hH3mgsmMnvum9NwK27s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
