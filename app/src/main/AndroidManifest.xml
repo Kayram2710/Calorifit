@@ -42,6 +42,8 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".DayViewActivity"/>
+        <activity android:name=".ProfileActivity"/>
+
 
 
     </application>

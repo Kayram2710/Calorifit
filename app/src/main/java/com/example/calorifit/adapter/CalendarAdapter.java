@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.calorifit.DayViewActivity;
 import com.example.calorifit.R;
 
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -23,11 +24,14 @@ public class CalendarAdapter extends RecyclerView.Adapter<CalendarAdapter.ViewHo
     private Context context;
     private List<String> days;
     private int todayDay;
+    private int todayMonth;
 
-    public CalendarAdapter(Context context, List<String> days, int todayDay) {
+
+    public CalendarAdapter(Context context, List<String> days, int todayDay, int todayMonth) {
         this.context = context;
         this.days = days;
         this.todayDay = todayDay;
+        this.todayMonth = todayMonth;
     }
 
     @NonNull
@@ -41,13 +45,15 @@ public class CalendarAdapter extends RecyclerView.Adapter<CalendarAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         String day = days.get(position);
         holder.textDay.setText(day);
+        Calendar calendar = Calendar.getInstance();
+        int currentMonth = calendar.get(Calendar.MONTH);
 
         // Handle empty days (placeholders)
         if (day.isEmpty()) {
             holder.textDay.setVisibility(View.INVISIBLE); // Hide placeholder days
         } else {
             holder.textDay.setVisibility(View.VISIBLE);
-            if (Integer.parseInt(day) == todayDay) {
+            if (Integer.parseInt(day) == todayDay && currentMonth == todayMonth) {
                 holder.statusDot.setVisibility(View.VISIBLE); // Show today's dot
                 holder.itemView.setOnClickListener(v -> {
                     // Pass the date to the DayViewActivity

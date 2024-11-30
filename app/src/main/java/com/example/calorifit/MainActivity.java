@@ -65,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        ImageButton profileBtn = findViewById(R.id.button_profile);
+        profileBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            startActivity(intent);
+        });
+
     }
 
     /**

@@ -80,7 +80,7 @@ public class CalendarActivity extends AppCompatActivity {
         List<String> days = generateDaysForMonth(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH));
 
         // Set Adapter
-        adapter = new CalendarAdapter(this, days, todayDay);
+        adapter = new CalendarAdapter(this, days, todayDay, calendar.get(Calendar.MONTH));
         recyclerView.setAdapter(adapter);
     }
 
