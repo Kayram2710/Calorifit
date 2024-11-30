@@ -4,3 +4,6 @@
 3. Allow gradle to build and let it modify some project paths
 4. Boot up android emulator
 5. Run program
+
+# Video Demonstration
+https://youtu.be/2fMJVN-p5R0
