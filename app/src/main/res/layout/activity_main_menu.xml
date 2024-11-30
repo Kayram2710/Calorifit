@@ -211,7 +211,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/food_placeholder"
                     android:backgroundTint="#FBFBFB"
-                    android:hint="Lunch/Dinner/Breakdast/Snack ?"
+                    android:hint="Lunch/Dinner/Breakfast/Snack ?"
                     android:paddingLeft="10dp"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
