@@ -3,7 +3,11 @@
     <style name="Base.Theme.Calorifit" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
     </style>
 
-    <style name="Theme.Calorifit" parent="Base.Theme.Calorifit" />
+    <style name="Theme.Calorifit" parent="Base.Theme.Calorifit" >
+        <item name="colorPrimaryDark">#9cf6f6</item>
+    </style>
+
 </resources>
